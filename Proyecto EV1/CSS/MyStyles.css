@@ -1,0 +1,789 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo-color{
+    background-color: #000000;
+    color: #FFF;
+}
+
+.fondo-color h2{
+    color: #ffffff;
+}
+
+.fondo-color b{
+    color: #ffffff;
+}
+
+h1, h2, h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: bold;
+}
+
+h4, h5, h6, p{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* INICIO */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* HEADER */
+header {
+    background-color: #5a5a5a;
+}
+
+/* Cambiar color al pasar el mouse */
+.navbar-nav .nav-link{
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e0b805; /* Cambia al color que desees al pasar el mouse */
+}
+
+.img-logo-navbar{
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/* Baner */
+.wrap-home-pagina{
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75),
+    rgb(0 0 0/ .15)),
+    url(../img/fondo/BANERINI.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagina-principal{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-pagina-principal{
+    text-align: center;
+}
+
+.wrap-pagina-principal h1{
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.wrap-pagina-principal p{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+
+
+
+/* CAROUSEL */
+.carr{
+    margin-top: 20px;
+}
+
+.fila-carr{
+    margin: auto;
+}
+
+.carousel-item img{
+    height: 600px;
+}
+
+.subtitle-promociones{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.carousel-item h3{
+    font-size: 50px;
+}
+
+.carousel-item p{
+    font-size: 30px;
+}
+
+@media (max-width: 1200px){
+    .carousel-item img{
+        height: inherit;        
+    }
+}
+
+@media (max-width: 600px){
+    .carousel-caption h3{
+        font-size: 35px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px){
+    .carousel-caption h3{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 300px){
+    .carousel-caption h3{
+        font-size: 25px;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: #5a5a5a;
+    color: #999;
+}
+
+footer ul{
+    padding: 0;
+}
+
+.wrap-piedepagina{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.elemento-piedepagina h5{
+    margin: 1rem 0;
+}
+
+.texto-piedepagina{
+    line-height: 2;
+}
+
+.texto-piedepagina h5{
+    color: #fff;
+}
+
+.shaolin-piedepagina{
+    margin-top: 1rem;
+}
+
+.shaolin-piedepagina h3{
+    color: #fff;
+}
+
+.texto-piedepagina li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.texto-piedepagina li a:hover{
+    color: #e0b805;
+}
+
+.texto-piedepagina li{
+    list-style: none;
+}
+
+.rrss-elemento-piedepagina h5{
+    color: #fff;
+}
+
+.rrss-elemento-piedepagina ul{
+    display: flex;
+}
+
+.rrss-elemento-piedepagina img{
+    width: 45px;
+}
+
+.rrss-elemento-piedepagina li{
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.creditos-piedepagina{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.creditos-piedepagina ul{
+    display: flex;
+}
+
+.creditos-piedepagina ul li{
+    padding-right: 1rem;
+    list-style: none;
+}
+
+.creditos-piedepagina ul li a{
+    color: #576171;
+    text-decoration: none;
+}
+
+.logo-footer img{
+    height: 50px;
+}
+
+
+@media (max-width:768px){
+    .wrap-piedepagina{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:480px){
+    .wrap-piedepagina{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:320px){
+    .creditos-piedepagina{
+        flex-flow: column;
+    }
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Servicios */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.wrap-home-pagina-carta{
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75),
+    rgb(0 0 0/ .15)),
+    url(../img/fondo/BannerCarta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos adicionales para personalizar la apariencia de las tarjetas */
+.card{
+    border-radius: 15px;
+    perspective: 1000px; /* Define la perspectiva para las tarjetas */
+    box-shadow: 0 0 0 transparent;
+  }
+
+.card-inner{
+    transition: transform 0.6s; /* Agrega una transición suave al girar */
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg); /* Gira la tarjeta a 180 grados al pasar el ratón por encima */
+}
+
+.card-face{
+    backface-visibility: hidden; /* Evita que la parte posterior de la tarjeta sea visible durante la rotación */
+}
+
+.card-back{
+    transform: rotateY(180deg); /* Inicialmente, la tarjeta trasera está girada 180 grados */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; /* Evita que la parte posterior de la tarjeta sea visible durante la rotación */
+}
+                        
+.card:hover .card-front img{/* Aplica opacidad a la imagen en la tarjeta frontal cuando está girada */
+    opacity: 0.5;
+}
+
+.card-back .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20%;
+}
+
+.card-body .btn-primary{
+    background-color: #191919;
+}
+
+.card-body .btn-primary:hover{
+    background-color: #E0050D;
+}
+
+.subtitle-productos{
+    text-align: center;
+}
+
+.card-body .card-title{
+    font-size: 26px;
+    color: #fff;
+}
+
+.card-body .card-text{
+    font-size: 20px;
+    color: #FFF;
+}
+
+@media (max-width:320px){
+    .card-back .card-body{
+        padding-top: 10%;
+    }
+}
+
+@media (max-width:260px){
+    .card-back .card-body{
+        padding-top: 5%;
+    }
+}
+
+@media (max-width:270px){
+    .card-body .card-title{
+        font-size: 20px;
+    }
+    .card-body .card-text{
+        font-size: 15px;
+    }
+    .card-body .btn{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* QUIENES SOMOS*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.wrap-home-pagina-quienes-somos{
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75),
+    rgb(0 0 0/ .15)),
+    url(../img/fondo/QuienesS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-top: 15%;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-texto-quienes-somos{
+    margin-top: 8rem;
+}
+
+.wrap-texto-quienes-somos p{
+    margin: 0 6rem;
+    font-size: 2rem;
+}
+
+.contenedor-quienes-somos{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contenedor-quienes-somos2{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* texto/imagen */
+.wrap-izquierda-texto{
+    width: 55%;
+}
+
+.wrap-izquierda-texto h2{
+    width: 55%;
+    font-size: 2.5rem;
+    margin-left: 10%;
+    margin-top: 19%;
+}
+
+.wrap-izquierda-texto p{
+    width: 75%;
+    font-size: 1.3rem;
+    margin-left: 10%;
+}
+
+.wrap-derecha-imagen{
+    width: 45%;
+}
+
+.wrap-derecha-imagen img{
+    width: 581px;
+    height: 708px;
+    border-radius: 3%;
+}
+
+/* imagen/text */
+.wrap-derecha-texto{
+    width: 45%;
+
+}
+
+.wrap-derecha-texto h2{
+    width: 55%;
+    font-size: 2.5rem;
+    margin-top: 19%;
+}
+
+.wrap-derecha-texto p{
+    width: 88.3%;
+    font-size: 1.3rem;
+}
+
+.wrap-izquierda-imagen{
+    width: 55%;
+}
+
+.wrap-izquierda-imagen img{
+    width: 581px;
+    height: 708px;
+    border-radius: 3%;
+    margin-left: 10%;
+}
+
+@media (max-width:1200px){
+    .wrap-texto-quienes-somos p{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1000px){
+    .wrap-texto-quienes-somos p{
+        font-size: 20px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width:800px){
+    .wrap-texto-quienes-somos p{
+        font-size: 15px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:600px){
+    .wrap-texto-quienes-somos p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:400px){
+    .wrap-texto-quienes-somos p{
+        font-size: 10px;
+    }
+}
+
+
+/* primer div */
+@media (max-width:1300px){
+    .contenedor-quienes-somos{
+        /* display: grid; */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; */
+    }
+
+    .wrap-izquierda-texto h2{
+        font-size: 2rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: 1rem;
+    }
+    .wrap-derecha-imagen img{
+        width: 500px;
+        height: 750px;
+    }
+
+}
+
+@media (max-width:1200px){
+    .wrap-derecha-imagen img{
+        width: 450px;
+        height: 675px;
+    }
+
+}
+
+@media (max-width:1100px){
+    .wrap-derecha-imagen img{
+        width: 400px;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:950px){
+    .contenedor-quienes-somos{
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .wrap-izquierda-texto{
+        width: 100%;
+    }
+    .wrap-izquierda-texto h2{
+        font-size: 2rem;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: 1rem;
+        width: 92%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .wrap-derecha-imagen{
+        width: 100%;
+    }
+    .wrap-derecha-imagen img{
+        width: 500px;
+        height: 750px;
+    }
+
+}
+
+@media (max-width:700px){
+    .wrap-izquierda-texto h2{
+        font-size: 1.8rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: .8rem;
+        width: 90%;
+    }
+    .wrap-derecha-imagen img{
+        width: 400px;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:470px){
+    .wrap-izquierda-texto h2{
+        font-size: 1.7rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: .7rem;
+        width: 88%;
+    }
+    .wrap-derecha-imagen img{
+        width: 350px;
+        height: 525px;
+    }
+
+}
+
+@media (max-width:470px){
+    .wrap-izquierda-texto h2{
+        font-size: 1.6rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: .6rem;
+        width: 86%;
+    }
+    .wrap-derecha-imagen img{
+        width: 300px;
+        height: 450px;
+    }
+
+}
+
+@media (max-width:300px){
+    .wrap-izquierda-texto h2{
+        font-size: 1.5rem;
+    }
+    .wrap-izquierda-texto p{
+        font-size: .5rem;
+        width: 82%;
+    }
+    .wrap-derecha-imagen img{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+/* segundo div */
+@media (max-width:1300px){
+    .contenedor-quienes-somos2{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .wrap-derecha-texto h2{
+        font-size: 2rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: 1rem;
+    }
+    .wrap-izquierda-imagen img{
+        width: 500px;
+        height: 750px;
+    }
+
+}
+
+@media (max-width:1200px){
+    .wrap-izquierda-imagen img{
+        width: 450px;
+        height: 675px;
+    }
+
+}
+
+@media (max-width:1100px){
+    .wrap-izquierda-imagen img{
+        width: 400px;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:950px){
+    .contenedor-quienes-somos2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .wrap-derecha-texto{
+        width: 100%;
+    }
+    .wrap-derecha-texto h2{
+        font-size: 2rem;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: 1rem;
+        width: 92%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .wrap-izquierda-imagen{
+        width: 100%;
+    }
+    .wrap-izquierda-imagen img{
+        width: 500px;
+        height: 750px;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:700px){
+    .wrap-derecha-texto h2{
+        font-size: 1.8rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: .8rem;
+        width: 90%;
+    }
+    .wrap-izquierda-imagen img{
+        width: 400px;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:470px){
+    .wrap-derecha-texto h2{
+        font-size: 1.7rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: .7rem;
+        width: 88%;
+    }
+    .wrap-izquierda-imagen img{
+        width: 350px;
+        height: 525px;
+    }
+
+}
+
+@media (max-width:470px){
+    .wrap-derecha-texto h2{
+        font-size: 1.6rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: .6rem;
+        width: 86%;
+    }
+    .wrap-izquierda-imagen img{
+        width: 300px;
+        height: 450px;
+    }
+
+}
+
+@media (max-width:300px){
+    .wrap-derecha-texto h2{
+        font-size: 1.5rem;
+    }
+    .wrap-derecha-texto p{
+        font-size: .5rem;
+        width: 82%;
+    }
+    .wrap-izquierda-imagen img{
+        width: 200px;
+        height: 300px;
+    }
+
+}
